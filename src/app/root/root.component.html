@@ -1,0 +1,8 @@
+<div>
+  <app-register *ngIf="mode === UiMode.Register" (registerSuccess)="register($event)"></app-register>
+  <app-lobby *ngIf="mode === UiMode.Lobby" [name]="name"
+             (startGame)="startGame()"
+             (openSettings)="settings()"></app-lobby>
+  <app-settings *ngIf="mode === UiMode.Settings" (close)="lobby()"></app-settings>
+  <app-game *ngIf="mode === UiMode.Game" [name]="name" (gameEnd)="lobby()"></app-game>
+</div>

@@ -1,0 +1,16 @@
+.users-row {
+  display: flex;
+  margin-bottom: 0.75rem;
+}
+
+.crcl {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  margin: 5px 1rem 0 0;
+  border: black 1px solid;
+}
+
+p{
+  margin: 0;
+}

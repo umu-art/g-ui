@@ -1,0 +1,23 @@
+<div class="back">
+  <div class="center-back">
+    <table (window:keydown)="move($event)">
+      <tr *ngFor="let row of gameMap; index as y">
+        <td class="pixel_background" *ngFor="let pixel of row; index as x"
+            [style.background]="colors[y][x]"
+            (click)="clickPoint(y, x)">
+          <div class="pixel"
+               [style.background-image]="images[y][x]">
+            <p *ngIf="pixel.army !== 0" class="unselectable">{{ pixel.army }}</p>
+          </div>
+
+          <div class="arrow up" [style.opacity]="have_up_arrow[y][x] ? 1 : 0"></div>
+          <div class="arrow down" [style.opacity]="have_down_arrow[y][x] ? 1 : 0"></div>
+          <div class="arrow left" [style.opacity]="have_left_arrow[y][x] ? 1 : 0"></div>
+          <div class="arrow right" [style.opacity]="have_right_arrow[y][x] ? 1 : 0"></div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<app-statistic class="statistic" [name]="name"></app-statistic>

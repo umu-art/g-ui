@@ -1,0 +1,11 @@
+<div class="center-back">
+  <p>{{ 'Ход: ' + gameStats.time }}</p>
+  <div class="stat-row" *ngFor="let stat of gameStats.users">
+    <div [style.background-color]="getUserColor(stat.user)" class="rounded-circle crcl"></div>
+    <p>{{ stat.user['name'] }}</p>
+    <p>{{ stat.isAlive ? 'жив' : 'помер' }}</p>
+    <p>{{ stat.army }}</p>
+    <p>{{ stat.map }}</p>
+    <p>{{ stat.cities }}</p>
+  </div>
+</div>

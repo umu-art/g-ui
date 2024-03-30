@@ -41,6 +41,9 @@ jobs:
     - name: Checkout g-ui
       uses: actions/checkout@v3
       
+    - name: Install g-ui deps
+      run: npm install
+      
     - name: Build g-ui
       run: npm run build
       

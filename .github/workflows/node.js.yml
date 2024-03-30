@@ -49,6 +49,8 @@ jobs:
       
     - name: Install g-ui deps
       run: npm install
+
+    - run: ls ./
       
     - name: Build g-ui
       run: npm run build

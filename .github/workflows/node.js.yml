@@ -41,11 +41,12 @@ jobs:
 
     - name: Add api client
       run: cp -r /home/runner/work/api/client ./
+  
+    - name: Clean up
+      run: rm -r ./node_modules && npm cache clean --force
       
     - name: Install g-ui deps
       run: npm install
-
-    - run: ls ./client
       
     - name: Build g-ui
       run: npm run build

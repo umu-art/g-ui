@@ -2,7 +2,7 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {UsersService} from "../../client/api/users.service";
 import {v4 as uuid} from 'uuid';
-import {MapService} from "../../client";
+import {MapService} from "../../client/api/map.service";
 import {MovesService} from "../../client/api/moves.service";
 import {PhaseService} from "../../client/api/phase.service";
 import {PropertiesService} from "../../client/api/properties.service";

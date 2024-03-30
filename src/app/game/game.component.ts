@@ -1,7 +1,8 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {UsersService} from "../../../client/api/users.service";
 import {User} from "../../../client/model/user";
-import {GameObject, GameObjectType, MapService} from "../../../client";
+import {GameObject} from "../../../client/model/gameObject";
+import {GameObjectType} from "../../../client/model/gameObjectType";
 import {Direction} from "../../../client/model/direction";
 import {MoveService} from "../move.service";
 import {Rgb} from "../../../lib/rgb";
@@ -9,6 +10,7 @@ import {Observable, timer} from "rxjs";
 import {Move} from "../../../client/model/move";
 import {PhaseService} from "../../../client/api/phase.service";
 import {GamePhase} from "../../../client/model/gamePhase";
+import {MapService} from "../../../client/api/map.service";
 
 @Component({
   selector: 'app-game',

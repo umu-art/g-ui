@@ -42,8 +42,8 @@ jobs:
     - name: Add api client
       run: cp -r /home/runner/work/api/client ./
   
-    - name: Clean up
-      run: rm -r ./node_modules && npm cache clean --force
+    - name: Clean up npm
+      run: npm cache clean --force
       
     - name: Install g-ui deps
       run: npm install

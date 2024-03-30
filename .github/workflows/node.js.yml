@@ -50,7 +50,7 @@ jobs:
     - name: Install g-ui deps
       run: npm install
 
-    - run: ls ./
+    - run: ls -lR ./client
       
     - name: Build g-ui
       run: npm run build

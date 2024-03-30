@@ -38,6 +38,15 @@ jobs:
     - name: Build g-api
       run: chmod 777 ./build-client-api.sh && /bin/bash ./build-client-api.sh
 
+    - name: Log1
+      run: ls /home/runner/work/g-ui/g-ui
+      
+    - name: Log2
+      run: ls /home/runner/work/g-ui
+      
+    - name: Log3
+      run: ls /home/runner/work
+
     - name: Checkout g-ui
       uses: actions/checkout@v3
       

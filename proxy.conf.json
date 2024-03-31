@@ -1,6 +1,6 @@
 {
   "/backend/**": {
-    "target": "http://localhost:1210",
+    "target": "http://umu-art.ru",
     "secure": false,
     "logLevel": "debug"
   }

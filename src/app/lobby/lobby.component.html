@@ -1,26 +1,23 @@
-<div class="back">
-  <div class="center-back" style="width: 270px">
+<div class="column-flex" style="width: 270px">
+  <h1>Лобби</h1>
+  <hr class="mt-1">
 
-    <h1>Лобби</h1>
-    <hr class="mt-1">
-
-    <div>
-      <div class="users-row" *ngFor="let user of users">
-        <div [style.background-color]="getUserColor(user)" class="rounded-circle crcl"></div>
-        <p [style.color]="getUserNameColor(user)">{{ user['name'] }}</p>
-      </div>
+  <div>
+    <div class="users-row" *ngFor="let user of users">
+      <div [style.background-color]="getUserColor(user)" class="rounded-circle crcl"></div>
+      <p [style.color]="getUserNameColor(user)">{{ user['name'] }}</p>
     </div>
-
-    <hr class="mt-1">
-
-    <div>
-      <p *ngIf="isAdmin">Вы админ</p>
-      <p *ngIf="!isAdmin">Вы не админ</p>
-    </div>
-
-    <hr class="mt-1">
-
-    <button class="btn btn-primary" (click)="settings()">Настройки</button>
-    <button *ngIf="canStartGame" class="btn btn-success mt-2" (click)="play()">Начать игру</button>
   </div>
+
+  <hr class="mt-1">
+
+  <div>
+    <p *ngIf="isAdmin">Вы админ</p>
+    <p *ngIf="!isAdmin">Вы не админ</p>
+  </div>
+
+  <hr class="mt-1">
+
+  <button class="btn btn-primary" (click)="settings()">Настройки</button>
+  <button *ngIf="canStartGame" class="btn btn-success mt-2" (click)="play()">Начать игру</button>
 </div>

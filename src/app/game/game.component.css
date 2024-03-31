@@ -9,8 +9,9 @@
 
 .pixel_background {
   transition: all 0.1s linear;
-  border: 1px solid black;
-  position: relative
+  border: 1px inset black;
+  position: relative;
+  z-index: 20;
 }
 
 p {

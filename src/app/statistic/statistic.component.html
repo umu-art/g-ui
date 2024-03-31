@@ -1,4 +1,4 @@
-<div class="center-back">
+<div class="statistic-back column-flex">
   <p>{{ 'Ход: ' + gameStats.time }}</p>
   <div class="stat-row" *ngFor="let stat of gameStats.users">
     <div [style.background-color]="getUserColor(stat.user)" class="rounded-circle crcl"></div>

@@ -1,28 +1,26 @@
-<div class="back">
-  <div class="center-back" style="width: 270px;">
-    <h1>Настройки</h1>
-    <hr>
-    <p>Ширина карты</p>
-    <input [(ngModel)]="gameProps.mapWidth" type="number" [readonly]="!canChange">
-    <p>Высота карты</p>
-    <input [(ngModel)]="gameProps.mapHeight" type="number" [readonly]="!canChange">
-    <p>Скорость игры</p>
-    <input [(ngModel)]="gameProps.gameSpeed" type="number" [readonly]="!canChange">
-    <hr>
-    <p>Плотность гор</p>
-    <input [(ngModel)]="gameProps.mountainDensity" type="number" [readonly]="!canChange">
-    <p>Плотность городов</p>
-    <input [(ngModel)]="gameProps.cityDensity" type="number" [readonly]="!canChange">
-    <p>Плотность грязи</p>
-    <input [(ngModel)]="gameProps.mudDensity" type="number" [readonly]="!canChange">
-    <hr>
-    <p>Порталы</p>
-    <input [(ngModel)]="gameProps.portals" type="checkbox" [readonly]="!canChange">
-    <p>Всю карту видно сразу</p>
-    <input [(ngModel)]="gameProps.allVisible" type="checkbox" [readonly]="!canChange">
-    <p>Смерть после потери всех городов</p>
-    <input [(ngModel)]="gameProps.moveCenterOnKill" type="checkbox" [readonly]="!canChange">
-    <hr>
-    <button class="btn btn-primary" (click)="close.emit()">Назад</button>
-  </div>
+<div class="column-flex" style="width: 300px;">
+  <h1>Настройки</h1>
+  <hr>
+  <p>Ширина карты</p>
+  <input [(ngModel)]="gameProps.mapWidth" type="number" [readonly]="!canChange">
+  <p>Высота карты</p>
+  <input [(ngModel)]="gameProps.mapHeight" type="number" [readonly]="!canChange">
+  <p>Скорость игры</p>
+  <input [(ngModel)]="gameProps.gameSpeed" type="number" [readonly]="!canChange">
+  <hr>
+  <p>Плотность гор</p>
+  <input [(ngModel)]="gameProps.mountainDensity" type="number" [readonly]="!canChange">
+  <p>Плотность городов</p>
+  <input [(ngModel)]="gameProps.cityDensity" type="number" [readonly]="!canChange">
+  <p>Плотность грязи</p>
+  <input [(ngModel)]="gameProps.mudDensity" type="number" [readonly]="!canChange">
+  <hr>
+  <p>Порталы</p>
+  <input [(ngModel)]="gameProps.portals" type="checkbox" [readonly]="!canChange">
+  <p>Всю карту видно сразу</p>
+  <input [(ngModel)]="gameProps.allVisible" type="checkbox" [readonly]="!canChange">
+  <p>Смерть после потери всех городов</p>
+  <input [(ngModel)]="gameProps.moveCenterOnKill" type="checkbox" [readonly]="!canChange">
+  <hr>
+  <button class="btn btn-primary" (click)="close.emit()">Назад</button>
 </div>

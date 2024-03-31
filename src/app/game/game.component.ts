@@ -97,13 +97,13 @@ export class GameComponent {
       return
     }
 
-    if (event.key === "ArrowLeft") {
+    if (event.key === "a" || event.key === "ф") {
       this.moveDirection(Direction.Left)
-    } else if (event.key === "ArrowRight") {
+    } else if (event.key === "d" || event.key === "в") {
       this.moveDirection(Direction.Right)
-    } else if (event.key === "ArrowUp") {
+    } else if (event.key === "w" || event.key === "ц") {
       this.moveDirection(Direction.Up)
-    } else if (event.key === "ArrowDown") {
+    } else if (event.key === "s" || event.key === "ы") {
       this.moveDirection(Direction.Down)
     }
   }

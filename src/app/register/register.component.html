@@ -1,8 +1,6 @@
-<div class="back">
-  <div class="center-back" style="width: 270px">
-    <h1 class="h3 mb-3 fw-normal">Никнейм:</h1>
-    <input id="name" type="text" class="form-control shadow-sm border-1 border-black" [(ngModel)]="name"
-           (keyup.enter)="register()">
-    <button class="btn btn-primary mt-3 shadow-sm" (click)="register()">Старт</button>
-  </div>
+<div class="column-flex" style="width: 270px">
+  <h1 class="h3 mb-3 fw-normal">Никнейм:</h1>
+  <input id="name" type="text" class="form-control shadow-sm border-1 border-black" [(ngModel)]="name"
+         (keyup.enter)="register()">
+  <button class="btn btn-primary mt-3 shadow-sm" (click)="register()">Старт</button>
 </div>

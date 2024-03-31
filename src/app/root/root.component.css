@@ -1,0 +1,29 @@
+.back {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: table;
+  overflow: auto;
+
+  background-image: url("/assets/back.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.center-ceil {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.component {
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: rgba(255, 255, 255, 0.5) 2px solid;
+  box-shadow: 0 0 1rem black;
+  backdrop-filter: blur(0.75rem);
+}

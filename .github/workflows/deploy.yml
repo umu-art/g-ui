@@ -66,15 +66,8 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         context: .
+        file: {context}/deploy/Dockerfile
         push: true
         tags: vikazeni/g-ui:latest
-
-
-  sync-server:
-    needs: build-image
-    runs-on: ubuntu-latest
-    steps:
-    - name: Echo
-      run: echo hi
 
 
